@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/jobrocket/version'
+require 'omniauth-jobrocket/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-jobrocket"
-  spec.version       = Omniauth::JobRocket::VERSION
+  spec.version       = OmniAuth::JobRocket::VERSION
   spec.authors       = ["George Drummond"]
   spec.email         = ["georgedrummond@gmail.com"]
   spec.description   = %q{Write a gem description}
