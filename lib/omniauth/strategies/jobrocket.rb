@@ -4,15 +4,15 @@ module OmniAuth
   module Strategies
     class JobRocket < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        :site => 'http://api.jobrocket.dev',
-        :authorize_url => 'http://jobrocket.dev/oauth/authorize',
-        :token_url => 'http://jobrocket.dev/oauth/access_token'
+        :site => 'https://api.jobrocket.io',
+        :authorize_url => 'https://jobrocket.io/oauth/authorize',
+        :token_url => 'https://jobrocket.io/oauth/access_token'
       }
 
       def request_phase
         super
       end
-      
+
       def authorize_params
         super.tap do |params|
           %w[scope client_options].each do |v|
